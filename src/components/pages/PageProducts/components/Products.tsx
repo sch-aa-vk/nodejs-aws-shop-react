@@ -16,7 +16,7 @@ export default function Products() {
   }
 
   return (
-    <Grid container spacing={4}>
+    <Grid container justifyContent="center" spacing={4}>
       {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
       {data.map(({ count, ...product }, index) => (
         <Grid item key={product.id} xs={12} sm={6} md={4}>
@@ -40,6 +40,11 @@ export default function Products() {
           </Card>
         </Grid>
       ))}
+      {data.length === 0 && (
+        <Typography gutterBottom variant="h5" component="h2" marginTop="100px">
+          No products available at the moment. Please check back later.
+        </Typography>
+      )}
     </Grid>
   );
 }
