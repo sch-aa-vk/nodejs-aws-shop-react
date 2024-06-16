@@ -15,7 +15,7 @@ export class StaticSite extends Stack {
     );
 
     const siteBucket = new s3.Bucket(this, "nodejs-aws-shop-react-bucket", {
-      bucketName: "nodejs-aws-shop-react-bucket",
+      bucketName: "nodejs-aws-shop-react-s3",
       websiteIndexDocument: "index.html",
       publicReadAccess: false,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
