@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node --prefer-ts-exts -P tsconfig-aws.json src/cdk/index.ts"
+}
