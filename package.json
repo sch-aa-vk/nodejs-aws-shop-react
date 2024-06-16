@@ -11,7 +11,7 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
     "prettier": "prettier src --write",
-    "cdk:deploy": "tsc && vite build && cdk deploy"
+    "cdk:deploy": "tsc && vite build && cdk synth && cdk deploy"
   },
   "dependencies": {
     "@emotion/styled": "^11.9.3",
